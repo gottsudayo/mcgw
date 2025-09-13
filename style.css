@@ -47,7 +47,7 @@ thead {
   background-color: #72FF00;
   font-size: 25px;
   margin: 0px;
-  border: solid 3px yellow
+  border: solid 3px yellow;
 }  
 .dropdown-content {
   display: none;
