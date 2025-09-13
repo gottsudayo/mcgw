@@ -33,8 +33,8 @@ h3 {
     font-size: 15px;
     padding-left: 7px;
     background-color: #888;
-    border-left: solid 3px lightblue;
-    border-bottom: solid 1px lightblue;
+    border-left: solid 3px blue;
+    border-bottom: solid 1px blue;
 }
 main {
     background-color: rgb(255 255 255 / 50%);
