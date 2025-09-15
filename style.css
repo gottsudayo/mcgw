@@ -83,3 +83,21 @@ thead {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.audio_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6f6f6f;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.audio_btn:hover {
+    background-color: #ef427e;
+}

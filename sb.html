@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>許可Modリスト　GottsudayoWorld - Minecraft 経済系サバイバル鯖</title>
+        <title>GottsudayoWorld - Minecraft 経済系サバイバル鯖</title>
         <meta charset="UTF-8">
         <meta name="description" content="Minecraft 経済系サバイバル鯖　GottsudayoWorldの公式ホームページです。">
         <meta name="keywords" content="マイクラ,マイクラ鯖,サバイバル鯖,経済鯖,GottsudayoWorld,gottsudayo">
@@ -49,6 +49,31 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon-32x32.png">
         <link rel="manifest" href="favicons/manifest.json">
         <link rel="stylesheet" href="style.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // .sound-buttonクラスを持つすべての要素を取得
+                const soundButtons = document.querySelectorAll('.sound-button');
+                soundButtons.style.display = 'flex';
+                soundButtons.style.justify-content = 'center';
+                soundButtons.style.align-items = 'center';
+                
+
+                // それぞれの要素にクリックイベントを追加
+                soundButtons.forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        // クリックされた要素からdata-audio属性の値を取得
+                        const audioPath = event.currentTarget.dataset.audio;
+                        
+                        if (audioPath) {
+                            // 新しいAudioオブジェクトを作成し、音声ファイルを再生
+                            const audio = new Audio(audioPath);
+                            audio.currentTime = 0; // 連続再生に対応
+                        audio.play();
+                        }
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -61,29 +86,34 @@
             <div class="dropdown"><span><a href="admin.html">運営一覧</a></span></div>
             <div class="dropdown"><span><a href="event.html">イベント予定</a></span><div class="dropdown-content"><p>No Pages</p></div></div>
             <div class="dropdown"><span><a href="contacts.html">連絡先</a></span></div>
-            <div class="dropdown"><span>外部リンク</span><div class="dropdown-content"><a href="https://discord.gg/nBCGVuR7nj">Discord鯖（管理長：tomiyusa）</a><br><a href="sb.html" target="_blank">Discord用サウンドボード</a></div></div>
+            <div class="dropdown"><span>外部リンク</span><div class="dropdown-content"><a href="https://discord.gg/nBCGVuR7nj">Discord鯖（管理長：tomiyusa）</a></div><div class="dropdown-content"><a href="sb.html" target="_blank">Discord用サウンドボード</a></div></div>
         </header>
         <main>
-            <h2>前提Mod</h2>
+            <h1>Discord用サウンドボード</h1>
+            <h2>ルール</h2>
             <ul>
-                <li>Forge</li>
-                <li>NeoForge</li>
-                <li>Fablic（FablicAPIを含める）</li>
-                <li>Optifine</li>
+                <li>このサウンドボードはGottsudayoWorld公式Discordのボイスチャンネル及びステージチャンネル以外で利用してはいけません。</li>
+                <li>この音声の著作権はすべて私ゴッツにあります。</li>
             </ul>
-            <h2>シェーダー系Mod</h2>
-            <ul>
-            <li>Sodium</li>
-            <li>Iris</li>
-            <p>※別途シェーダーパックを利用する場合は不透過ブロックを透過させないシェーダーをご利用ください。</p>
-            </ul>
-            <h2>その他Mod</h2>
-            <ul>
-            <li>JourneyMap</li>
-            <li>Just Enough Items(JEI)</li>
-            <li>Modmenu</li>
-            </ul>
-            <p>その他使いたいMod等ありましたら、<a href="https://docs.google.com/forms/d/e/1FAIpQLSf8gwMZPgtVWhQsHpyZ0uvbaaFFN0ndxjJSnLBdtFXl1c-Fig/viewform" target="_blank">Mod許可申請（Google Forms）</a>より回答をお願いします。</p>
+            <h2>サウンドボード</h2>
+                <button class="sound-button" data-audio="sbs/01おはよう（寝起き）.mp3">おはよう（寝起き）</button>
+                <button class="sound-button" data-audio="sbs/02やあ.mp3">やあ</button>
+                <button class="sound-button" data-audio="sbs/03ごきげんよう.mp3">ごきげんよう</button>
+                <button class="sound-button" data-audio="sbs/04ごきげんわるいよう.mp3">ごきげんわるいよう</button>
+                <button class="sound-button" data-audio="sbs/05お久ブロリー.mp3">お久ブロリー</button>
+                <button class="sound-button" data-audio="sbs/06ということでさよなら.mp3">ということでさよなら</button>
+                <button class="sound-button" data-audio="sbs/07はいこんにちはゴッツでーす.mp3">はいこんにちはゴッツでーす</button>
+                <button class="sound-button" data-audio="sbs/08ウェーイ.mp3">ウェーイ</button>
+                <button class="sound-button" data-audio="sbs/09え？.mp3">え？</button>
+                <button class="sound-button" data-audio="sbs/10なにそれ～www.mp3">なにそれ～www</button>
+                <button class="sound-button" data-audio="sbs/11ご飯食べた？.mp3">ご飯食べた？</button>
+                <button class="sound-button" data-audio="sbs/12ふざけるなぁー.mp3">ふざけるなぁー</button>
+                <button class="sound-button" data-audio="sbs/13ラッパのファンファーレ.mp3">ラッパのファンファーレ</button>
+                <button class="sound-button" data-audio="sbs/14何するよ.mp3">何するよ</button>
+                <button class="sound-button" data-audio="sbs/15何をしてんの！？.mp3">何をしてんの！？</button>
+                <button class="sound-button" data-audio="sbs/16元素魔法.mp3">元素魔法</button>
+                <button class="sound-button" data-audio="sbs/17うわー.mp3">うわー</button>
+                <button class="sound-button" data-audio="sbs/18うわうわ.mp3">うわうわ</button>
         </main>
         <footer>
             <p style="text-align: center; color: white;">GottsudayoWorld　　　<a href="index.html" style="color: white;">トップ</a>　　<a href="rules.html" style="color: white;">ルール</a>　　<a href="contacts.html" style="color: white;">連絡先</a></p>
