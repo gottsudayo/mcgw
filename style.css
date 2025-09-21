@@ -52,7 +52,7 @@ thead {
   position: relative;
   display: inline-block;
   background-color: #72FF00;
-  font-size: 25px;
+  font-size: 17px;
   padding-left: 3.65rem;
   padding-right: 3.65rem;
   border: solid 3px yellow;
@@ -62,9 +62,9 @@ thead {
   position: absolute;
   left: 0px;
   background-color: #56BF00;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(29, 66, 0, 0.2);
-  padding: 12px 16px;
+  min-width: 96px;
+  box-shadow: 0px 5px 10px 0px rgba(29, 66, 0, 0.2);
+  padding: 7px 10px;
   z-index: 1;
 }
 .dropdown a {
