@@ -10,6 +10,8 @@ header {
 body {
     background-image: url('back/back.png');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 aside {
     width: 300px;
@@ -38,7 +40,18 @@ h3 {
 }
 main {
     background-color: rgb(255 255 255 / 50%);
-    width: 100%;
+    width: 85%;
+    padding: 1em;
+    border-right: solid 2px #000;
+}
+aside {
+    background-color: rgb(255 255 255 / 50%);
+    width: 15%;
+    padding: 1em;
+}
+.content {
+    flex: 1;
+    display: flex;
 }
 footer {
     background-color: #000000;
