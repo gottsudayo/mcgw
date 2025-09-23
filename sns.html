@@ -49,28 +49,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon-32x32.png">
         <link rel="manifest" href="favicons/manifest.json">
         <link rel="stylesheet" href="style.css">
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // .sound-buttonクラスを持つすべての要素を取得
-                const soundButtons = document.querySelectorAll('.sound-button');
-                
-
-                // それぞれの要素にクリックイベントを追加
-                soundButtons.forEach(button => {
-                    button.addEventListener('click', (event) => {
-                        // クリックされた要素からdata-audio属性の値を取得
-                        const audioPath = event.currentTarget.dataset.audio;
-                        
-                        if (audioPath) {
-                            // 新しいAudioオブジェクトを作成し、音声ファイルを再生
-                            const audio = new Audio(audioPath);
-                            audio.currentTime = 0; // 連続再生に対応
-                        audio.play();
-                        }
-                    });
-                });
-            });
-        </script>
     </head>
     <body>
         <header>
@@ -87,31 +65,26 @@
             <div class="dropdown"><span>外部リンク</span><div class="dropdown-content"><a href="https://discord.gg/nBCGVuR7nj">Discord鯖（管理長：tomiyusa）</a><br><a href="sb.html" target="_blank">Discord用サウンドボード</a></div></div>
         </header>
         <main>
-            <h1>Discord用サウンドボード</h1>
-            <h2>ルール</h2>
+            <h1>SNS共有規約</h1>
+            <h2>第0章　概要</h2>
+            <p>第1条　前提事項<br>この規約はサーバーの全コンテンツにおいて、SNSに共有する際の利用規約である。</p>
+            <p>第2条　対象<br>この規約は鯖の全プレイヤー及び全運営に適用される。</p>
+            <p>第3条　名称表記<br>サーバー主を以下鯖主とする。</p>
+            <h2>第1章　禁止事項</h2>
+            <p>第1条　SNSの制限<br>当サーバーのコンテンツ全部または一部を投稿できるサイトは<a href="https://www.youtube.com" target="_blank">YouTube</a>、<a href="https://x.com" target="_blank">X（旧Twitter）</a>、<a href="https://www.instagram.com/" target="_blank">Instagram</a>、<a href="https://www.nicovideo.jp/" target="_blank">ニコニコ動画</a>、LINE（LINEヤフー社）、<a href="https://discord.com" target="_blank">Discord</a>のみとする。それ以外のSNSには投稿不可とする。</p>
+            <p>第2条　偽アカウント<br>他SNSを含め、当サーバーの偽アカウント（公式を名乗る、運営または鯖主の誰かを名乗るアカウント）を公開することを禁じる。</p>
+            <p>第3条　投稿内容の制限<br>当サーバーや鯖主・運営・プレイヤーの名誉棄損、侮辱、偽情報等を発信する行為を禁じる。</p>
+            <p>第4条　収益の制限<br>当サーバーの情報発信をメインとする収益化を禁じる。</p>
+            <h2>第2章　プレイヤーの情報公開</h2>
+            <p>第1条　公開承認<br>当サーバーのすべての運営及びプレイヤーは、許可されているSNSに映像・スキン・MCID・会話が公開されることに必ず同意しなければならない。</p>
+            <p>第2条　公開通知<br>当サーバーでSNSへの投稿を目的とした撮影・収録は、開始時及び終了時にサーバーの公開チャットにてSNSへ投稿する動画の撮影・収録をすることを全プレイヤーに通知しなければならない。また、通知と収録開始終了の間には1分の猶予がなければならない。</p>
+            <h2>第3章　免責事項</h2>
+            <p>第1条　運営責任<br>鯖主及び運営は当サーバーにかかわらず、すべての情報発信においていかなる責任を負わないものとする。</p>
+            <p>第2条　罰則<br>この規約に違反した場合は通常ルールと同じ罰則を受けることを承認しなければならない。</p>
+            <h2>記録</h2>
             <ul>
-                <li>このサウンドボードはGottsudayoWorld公式Discordのボイスチャンネル及びステージチャンネル以外で利用してはいけません。</li>
-                <li>この音声の著作権はすべて私ゴッツにあります。</li>
+                <li>2025年9月23日　制定</li>
             </ul>
-            <h2>サウンドボード</h2>
-                <button class="sound-button" data-audio="sbs/01おはよう（寝起き）.mp3">おはよう（寝起き）</button>
-                <button class="sound-button" data-audio="sbs/02やあ.mp3">やあ</button>
-                <button class="sound-button" data-audio="sbs/03ごきげんよう.mp3">ごきげんよう</button>
-                <button class="sound-button" data-audio="sbs/04ごきげんわるいよう.mp3">ごきげんわるいよう</button>
-                <button class="sound-button" data-audio="sbs/05お久ブロリー.mp3">お久ブロリー</button>
-                <button class="sound-button" data-audio="sbs/06ということでさよなら.mp3">ということでさよなら</button>
-                <button class="sound-button" data-audio="sbs/07はいこんにちはゴッツでーす.mp3">はいこんにちはゴッツでーす</button>
-                <button class="sound-button" data-audio="sbs/08ウェーイ.mp3">ウェーイ</button>
-                <button class="sound-button" data-audio="sbs/09え？.mp3">え？</button>
-                <button class="sound-button" data-audio="sbs/10なにそれ～www.mp3">なにそれ～www</button>
-                <button class="sound-button" data-audio="sbs/11ご飯食べた？.mp3">ご飯食べた？</button>
-                <button class="sound-button" data-audio="sbs/12ふざけるなぁー.mp3">ふざけるなぁー</button>
-                <button class="sound-button" data-audio="sbs/13ラッパのファンファーレ.mp3">ラッパのファンファーレ</button>
-                <button class="sound-button" data-audio="sbs/14何するよ.mp3">何するよ</button>
-                <button class="sound-button" data-audio="sbs/15何をしてんの！？.mp3">何をしてんの！？</button>
-                <button class="sound-button" data-audio="sbs/16元素魔法.mp3">元素魔法</button>
-                <button class="sound-button" data-audio="sbs/17うわー.mp3">うわー</button>
-                <button class="sound-button" data-audio="sbs/18うわうわ.mp3">うわうわ</button>
         </main>
         <footer>
             <p style="text-align: center; color: white;">GottsudayoWorld　　　<a href="index.html" style="color: white;">トップ</a>　　<a href="rules.html" style="color: white;">ルール</a>　　<a href="contacts.html" style="color: white;">連絡先</a></p>
